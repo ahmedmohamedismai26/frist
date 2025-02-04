@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>trip form </title>
+    <link rel="stylesheet" href="steyle.css">
+</head>
+<body>
+    <img src="" alt="Background Image" class="fullscreen-image">
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label>Gender:</label><br>
+<div class="gender-options">
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</div>
+
+<style>
+.gender-options {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+
+input[type="radio"] {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle; 
+    cursor: pointer;
+    transition: background-color 0.2s; 
+}
+
+input[type="radio"]:checked {
+    background-color: #007bff; 
+    border-color: #007bff;
+}
+
+input[type="radio"]:focus {
+    outline: 2px solid #007bff; 
+}
+</style>
+      
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      
+        <label for="arrival">Arrival Date:</label><br>
+        <input type="date" id="arrival" name="arrival" required><br><br>
+      
+        <label for="return">Return Date:</label><br>
+        <input type="date" id="return" name="return" required><br><br>
+      
+          <label for="city">City:</label><br>
+        <select id="city" name="city">
+          <option value="cairo">Cairo</option>
+          <option value="alex">Alexandria</option>
+          <option value="aswan">Aswan</option>
+        </select><br><br>
+        <label>Services Needed:</label>
+        <div class="services">
+          <input type="checkbox" id="tickets" name="services[]" value="tickets">
+          <label for="tickets">Airline Tickets</label>
+        
+          <input type="checkbox" id="car" name="services[]" value="car">
+          <label for="car">Rental Car</label>
+        
+          <input type="checkbox" id="hotel" name="services[]" value="hotel">
+          <label for="hotel">Hotel Accommodation</label>
+        </div>
+        
+        <style>
+        .services {
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .services label {
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+        
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+            cursor: pointer;
+            vertical-align: middle;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        
+        input[type="checkbox"]:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+            position: relative;
+        }
+        
+        input[type="checkbox"]:checked::before {
+            content: '\2713';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 14px;
+        }
+        
+        input[type="checkbox"]:focus {
+            outline: 2px solid #007bff;
+        }
+        
+       
+        @media (max-width: 500px) {
+            .services {
+                flex-direction: column; 
+                align-items: flex-start;
+                gap: 10px; 
+            }
+        }
+        </style>
+       <div>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Styled Buttons Centered on Page</title>
+        <style>
+        body {
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh; 
+          margin: 0; 
+          background-color: #f0f0f0; 
+        }
+        
+        .button-container { 
+            display: flex;
+            gap: 20px; 
+        }
+        
+        .button {
+          display: inline-block;
+          padding: 15px 30px; 
+          text-decoration: none;
+          border: none;
+          border-radius: 8px; 
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-size: 18px; /* Larger font size */
+          font-weight: bold;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        
+        .submit-button {
+       
+          color: rgb(6, 6, 6);
+        }
+        
+        .submit-button:hover {
+          background-color: #45a049;
+        }
+        
+        .reset-button {
+        
+          color: rgb(0, 0, 0);
+        }
+        
+        .reset-button:hover {
+          background-color: #da190b;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="button-container">
+            <button class="button submit-button">Submit</button>
+            <button class="button reset-button">Reset</button>
+        </div>
+        
+        </body>
+        </html>
+      </form>
+    
+</body>
+
+
+
+
+
+</html>
